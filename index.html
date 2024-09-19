@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>random số ngẫu nhiên</title>
+    <style>
+      table {
+        width: 50%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        border: 1px solid;
+        padding: 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>vòng quay random</h1>
+    <button onclick="generateRandomNumber()">Chọn số</button>
+    <p id="result"></p>
+
+    <table>
+      <thead>
+        <tr>
+          <!-- thẻ <tr> được sử dụng để định nghĩa một hàng trong bảng -->
+          <th>Số</th>
+          <!-- thẻ <th> cột tiêu đề -->
+          <th>danh sách sinh viên</th>
+        </tr>
+      </thead>
+      <tbody id="infoTableBody">
+        <tr>
+          <td>1</td>
+          <!-- thẻ <td> cột dữ liệu -->
+          <td><input type="text" placeholder="Nhập tên hoặc mssv" /></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><input type="text" placeholder="Nhập tên hoặc mssv" /></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><input type="text" placeholder="Nhập tên hoặc mssv" /></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><input type="text" placeholder="Nhập tên hoặc mssv" /></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><input type="text" placeholder="Nhập tên hoặc mssv" /></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><input type="text" placeholder="Nhập tên hoặc mssv" /></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td><input type="text" placeholder="Nhập tên hoặc mssv" /></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td><input type="text" placeholder="Nhập tên hoặc mssv" /></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td><input type="text" placeholder="Nhập tên hoặc mssv" /></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td><input type="text" placeholder="Nhập tên hoặc mssv" /></td>
+        </tr>
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script>
+      function generateRandomNumber() {
+        const randomNumber = Math.floor(Math.random() * 10) + 1;
+        document.getElementById(
+          "result"
+        ).innerText = `Số ngẫu nhiên: ${randomNumber}`;
+      }
+    </script>
+    <hr />
+    <h5>Hoàng Duy Khánh</h5>
+  </body>
+</html>
